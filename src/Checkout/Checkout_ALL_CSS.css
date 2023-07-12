@@ -1403,7 +1403,11 @@
     background-color: white;
   }
 
-  .FormInputs_right img {
-    margin-right: 20px;
+  .FormInputs_right .InputPart img {
+    margin-right: 30px;
+  }
+
+  .FormInputs_right .InputPart input {
+    width: 55vw;
   }
 }
