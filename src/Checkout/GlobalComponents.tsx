@@ -12,7 +12,7 @@ const CustomInputTags = (e: CustomInput) => {
   if (e.rightIcon) {
     return (
       <>
-        <div className="FormInputs">
+        <div className="FormInputs_right">
           <label>{`<${e.label}>`}</label>
           <div className="InputPart">
             <input type="text" />

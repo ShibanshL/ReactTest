@@ -747,6 +747,33 @@
   font-size: 1em;
 }
 
+.FormInputs_right {
+  height: 8vh;
+  width: 25vw;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+  border-radius: 15px;
+  background: white;
+  border: 1.5px solid #e0e0e0;
+  outline: none;
+  color: black;
+  position: relative;
+  margin-top: 4vh;
+  padding-left: 25px;
+  font-size: 1em;
+}
+
+.FormInputs_right label {
+  position: absolute;
+  top: -1.8vh;
+  left: 1.5vw;
+  color: #595959;
+  /* margin-top: 50px; */
+  background-color: white;
+}
+
 .FormInputs label {
   position: absolute;
   top: -1.8vh;
@@ -777,6 +804,20 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  margin-left: 25px;
+}
+
+.FormInputs_right .InputPart {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-left: 25px;
+}
+
+.FormInputs_right .InputPart .rightImg_Visa {
+  width: 5vw;
 }
 
 .InputPart .leftImg {
@@ -1019,6 +1060,24 @@
     border-radius: 15px;
     background: white;
     border: 1.5px solid #f43b3b;
+    outline: none;
+    color: black;
+    position: relative;
+    margin-top: 4vh;
+    padding-left: 25px;
+    font-size: 1em;
+  }
+
+  .FormInputs_right {
+    height: 8vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 15px;
+    background: white;
+    border: 1.5px solid #e0e0e0;
     outline: none;
     color: black;
     position: relative;
@@ -1333,5 +1392,18 @@
     font-size: 0.8em;
     color: rgb(237, 78, 78);
     background-color: white;
+  }
+
+  .FormInputs_right label {
+    position: absolute;
+    top: -1.8vh;
+    left: 4vw;
+    font-size: 0.8em;
+    color: #595959;
+    background-color: white;
+  }
+
+  .FormInputs_right img {
+    margin-right: 20px;
   }
 }
