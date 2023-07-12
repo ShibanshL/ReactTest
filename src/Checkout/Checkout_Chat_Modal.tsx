@@ -1,4 +1,3 @@
-import React from "react";
 import "./Checkout_ALL_CSS.css";
 import Chat from "../assets/ChatsCircle.svg";
 

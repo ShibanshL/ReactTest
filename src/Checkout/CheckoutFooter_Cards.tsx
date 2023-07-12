@@ -1,4 +1,3 @@
-import React from "react";
 import CardData from "./FAQ.json";
 import Checked from "../assets/CircleWavyCheck.svg";
 import Chat from "../assets/ChatsCircle.svg";

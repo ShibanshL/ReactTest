@@ -1,4 +1,3 @@
-import React from "react";
 import CheckoutHead_Form from "./CheckoutHead_Form";
 import CheckoutHead_SideBar from "./CheckoutHead_SideBar";
 import "./Checkout_ALL_CSS.css";

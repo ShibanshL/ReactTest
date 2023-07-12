@@ -1,4 +1,3 @@
-import React from "react";
 import CheckoutHead from "./CheckoutHead";
 import CheckoutBody from "./CheckoutBody";
 import CheckoutFooter from "./CheckoutFooter";

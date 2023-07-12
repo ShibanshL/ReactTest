@@ -712,13 +712,6 @@
 /* GlobalComponents */
 
 .FormInputs {
-  /* display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-direction: row; */
-}
-
-.FormInputs {
   height: 8vh;
   width: 25vw;
   display: flex;

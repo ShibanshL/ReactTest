@@ -1,4 +1,3 @@
-import React from "react";
 import { Dividor } from "./GlobalComponents";
 import Insta from "../assets/InstagramLogo.svg";
 import FB from "../assets/FacebookLogo.svg";

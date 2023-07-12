@@ -1,4 +1,3 @@
-import React from "react";
 import Image1 from "../assets/motherSon.png";
 import Ticket from "../assets/Ticket.svg";
 import Clock from "../assets/Clock.svg";

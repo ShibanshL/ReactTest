@@ -1,11 +1,7 @@
-import React, { useEffect } from "react";
 import "./Checkout_ALL_CSS.css";
 import FAQdata from "../Checkout/FAQ.json";
 import { Dividor } from "./GlobalComponents";
 function Checkout_FAQ() {
-  useEffect(() => {
-    console.log(FAQdata.data.length);
-  }, []);
   return (
     <>
       <div className="FAQ_Section">

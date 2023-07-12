@@ -1,4 +1,3 @@
-import React from "react";
 import "./Checkout_ALL_CSS.css";
 import { CustomInputTags, Dividor } from "./GlobalComponents";
 import Kiarna from "../assets/Klarna.svg";

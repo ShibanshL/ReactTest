@@ -1,4 +1,3 @@
-import React from "react";
 import CheckoutFooter_Cards from "./CheckoutFooter_Cards";
 import CheckoutFinal_Footer from "./CheckoutFinal_Footer";
 

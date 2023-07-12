@@ -1,4 +1,3 @@
-import React from "react";
 import Checkout_FAQ from "./Checkout_FAQ";
 import Checkout_Chat_Modal from "./Checkout_Chat_Modal";
 import "./Checkout_ALL_CSS.css";
