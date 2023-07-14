@@ -725,53 +725,8 @@
   color: black;
   position: relative;
   margin-top: 4vh;
-  /* padding-left: 25px; */
   font-size: 1em;
-}
-
-.FormInputs_err {
-  height: 8vh;
-  width: 25vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  border-radius: 15px;
-  background: white;
-  border: 1.5px solid #f43b3b;
-  outline: none;
-  color: black;
-  position: relative;
-  margin-top: 4vh;
-  padding-left: 25px;
-  font-size: 1em;
-}
-
-.FormInputs_right {
-  height: 8vh;
-  width: 25vw;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  flex-direction: column;
-  border-radius: 15px;
-  background: white;
-  border: 1.5px solid #e0e0e0;
-  outline: none;
-  color: black;
-  position: relative;
-  margin-top: 4vh;
-  padding-left: 25px;
-  font-size: 1em;
-}
-
-.FormInputs_right label {
-  position: absolute;
-  top: -1.8vh;
-  left: 1.5vw;
-  color: #595959;
-  /* margin-top: 50px; */
-  background-color: white;
+  /* overflow: hidden; */
 }
 
 .FormInputs label {
@@ -779,26 +734,10 @@
   top: -1.8vh;
   left: 1.5vw;
   color: #595959;
-  /* margin-top: 50px; */
   background-color: white;
 }
 
-.FormInputs_err label {
-  position: absolute;
-  top: -1.8vh;
-  left: 1.5vw;
-  color: rgb(237, 78, 78);
-  /* margin-top: 50px; */
-  background-color: white;
-}
-
-.FormInputs_err .Error {
-  margin-top: 4.5vw;
-  background: none;
-}
-
-.FormInputs .InputPart,
-.FormInputs_err .InputPart {
+.FormInputs .InputPart {
   height: 100%;
   width: 100%;
   display: flex;
@@ -807,46 +746,32 @@
   margin-left: 25px;
 }
 
-.FormInputs_right .InputPart {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  margin-left: 25px;
+.FormInputs .ErrorMSG {
+  color: red;
+  position: absolute;
+  bottom: -3.5vh;
+  left: 1vw;
 }
 
-.FormInputs_right .InputPart .rightImg_Visa {
-  width: 5vw;
+.FormInputs .InputPart input {
+  width: 70%;
+  height: 5vh;
+  background: rgb(255, 255, 255);
+  border: none;
+  margin-left: 10px;
+  color: black;
+  font-size: 1.3em;
+  outline: none;
 }
 
 .InputPart .leftImg {
-  margin-left: 1vw;
-  border-radius: 5px;
+  margin-left: 10px;
+  width: 1.5vw;
 }
 
-.InputPart img {
-  margin-right: 1vw;
-  margin-left: 4vw;
-}
-
-.FormInputs_err .InputPart input {
-  background: white;
-  color: black;
-  border: none;
-  outline: none;
-  font-size: 1.2em;
-  margin-left: 0.5vw;
-}
-
-.InputPart input {
-  /* height: 100%; */
-  background: white;
-  color: black;
-  border: none;
-  outline: none;
-  font-size: 1.2em;
-  margin-left: 0.5vw;
+.InputPart .rightImg {
+  margin-right: 20px;
+  width: 3.5vw;
 }
 
 .Dividor {
@@ -1385,37 +1310,15 @@
     background-color: white;
   }
 
-  .FormInputs_err label {
-    position: absolute;
-    top: -1.8vh;
-    left: 4vw;
-    font-size: 0.8em;
-    color: rgb(237, 78, 78);
-    background-color: white;
-  }
-
-  .FormInputs_right label {
-    position: absolute;
-    top: -1.8vh;
-    left: 4vw;
-    font-size: 0.8em;
-    color: #595959;
-    background-color: white;
+  .FormInputs .rightImg {
+    width: 18vw;
   }
 
   .FormInputs .InputPart input {
     width: 55vw;
   }
 
-  .FormInputs_right .InputPart img {
-    margin-right: 30px;
-  }
-
-  .FormInputs_err .InputPart input {
-    width: 55vw;
-  }
-
-  .FormInputs_right .InputPart input {
-    width: 55vw;
+  .FormInputs .ErrorMSG {
+    font-size: 0.8em;
   }
 }

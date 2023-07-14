@@ -1,4 +1,5 @@
 import "./Checkout_ALL_CSS.css";
+import { useState } from "react";
 
 interface CustomInput {
   leftIcon?: string;
@@ -9,55 +10,27 @@ interface CustomInput {
 }
 
 const CustomInputTags = (e: CustomInput) => {
-  if (e.rightIcon) {
-    return (
-      <>
-        <div className="FormInputs_right">
-          <label>{`<${e.label}>`}</label>
-          <div className="InputPart">
-            <input type="text" />
-            <img src={e.rightIcon} className={`rightImg_${e.rIcon}`} />
-          </div>
-        </div>
-      </>
-    );
-  }
+  const [funName, setFunName] = useState("InputPart");
 
-  if (e.err) {
-    return (
-      <>
-        <div className="FormInputs_err">
-          <label>{`<${e.label}>`}</label>
-          <div className="InputPart">
-            <input type="text" />
-            <img src={e.leftIcon} className="rightImg" />
-          </div>
-          <label className="Error">{`<error message>`}</label>
-        </div>
-      </>
-    );
-  }
-
-  if (e.leftIcon) {
-    return (
-      <>
-        <div className="FormInputs">
-          <label>{`<${e.label}>`}</label>
-          <div className="InputPart">
-            <img src={e.leftIcon} className="leftImg" />
-            <input type="text" />
-          </div>
-        </div>
-      </>
-    );
-  }
   return (
     <>
-      <div className="FormInputs">
-        <label>{`<${e.label}>`}</label>
-        <div className="InputPart">
+      <div
+        className="FormInputs"
+        style={{
+          border: e.err ? "1.5px solid red" : "1.5px solid #e0e0e0",
+        }}
+      >
+        <label
+          style={{
+            color: e.err ? "red" : "#595959",
+          }}
+        >{`<${e.label}>`}</label>
+        <div className={funName}>
+          {e.leftIcon ? <img src={e.leftIcon} className="leftImg" /> : null}
           <input type="text" />
+          {e.rightIcon ? <img src={e.rightIcon} className="rightImg" /> : null}
         </div>
+        {e.err ? <p className="ErrorMSG">{`<error message>`}</p> : null}
       </div>
     </>
   );
